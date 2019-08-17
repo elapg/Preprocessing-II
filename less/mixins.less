@@ -1,6 +1,6 @@
 // Mixins in here
 
-.customBtn(@width, @height, @color, @font-size ){
+.customBtn(@width, @height, @color, @font-size){
 
 background-color:lightgreen;
 width:@width;
@@ -8,5 +8,11 @@ height: @height;
 color:@color;
 font-size:@font-size;
 padding: 20px;
+@media @mobile{
+    width:100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 }
 
